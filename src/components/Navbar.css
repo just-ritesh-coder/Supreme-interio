@@ -108,3 +108,9 @@
         display: block;
     }
 }
+
+@media (max-width: 480px) {
+    .logo a {
+        font-size: 1.4rem;
+    }
+}

@@ -2,21 +2,24 @@
 
 :root {
   /* Color Palette */
-  --bg-primary: #faf9f6; /* Cream/Off-white */
+  --bg-primary: #faf9f6;
+  /* Cream/Off-white */
   --bg-secondary: #ffffff;
-  --text-main: #222222; /* Dark Charcoal */
+  --text-main: #222222;
+  /* Dark Charcoal */
   --text-muted: #555555;
-  --accent-gold: #d4af37; /* Elegant Gold */
+  --accent-gold: #d4af37;
+  /* Elegant Gold */
   --accent-gold-dark: #b5952f;
-  
+
   /* Typography */
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Inter', sans-serif;
-  
+
   /* Layout */
   --container-width: 1200px;
   --spacing-section: 5rem;
-  
+
   /* Transitions */
   --transition-smooth: all 0.3s ease-in-out;
 }
@@ -39,7 +42,12 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 600;
   margin-bottom: 1rem;
@@ -127,4 +135,31 @@ img {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Global Responsive Adjustments */
+@media (max-width: 768px) {
+  :root {
+    --spacing-section: 4rem;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --spacing-section: 3rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
 }
